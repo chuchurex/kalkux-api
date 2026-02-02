@@ -1,0 +1,19 @@
+{
+  "name": "kalkux-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 execute kalkux-db --local --file=src/db/schema.sql",
+    "db:seed": "wrangler d1 execute kalkux-db --local --file=src/db/seed.sql",
+    "db:migrate:remote": "wrangler d1 execute kalkux-db --remote --file=src/db/schema.sql",
+    "db:seed:remote": "wrangler d1 execute kalkux-db --remote --file=src/db/seed.sql"
+  },
+  "dependencies": {
+    "hono": "^4"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
