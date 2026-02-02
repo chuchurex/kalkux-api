@@ -5,4 +5,4 @@ compatibility_date = "2024-12-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "kalkux-db"
-database_id = "placeholder"
+database_id = "c56ad6c6-2197-4b51-b343-98d44f9421fa"
