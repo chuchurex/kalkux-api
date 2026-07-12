@@ -2,3 +2,9 @@ node_modules/
 .wrangler/
 .dev.vars
 .DS_Store
+
+# Secretos / entorno (no commitear)
+.env
+.env.*
+!.env.example
+!.env.template
