@@ -29,3 +29,9 @@ documento JSON en Cloudflare D1.
   hacen upsert: el cuerpo reemplaza por completo el documento almacenado.
 - El binding de D1 (`kalkux-db`) y su configuracion viven en `wrangler.toml`.
   Requiere una cuenta de Cloudflare con Wrangler autenticado.
+
+## Infraestructura (deploy y datos SEO)
+
+El deploy en Cloudflare y el acceso a datos SEO (Search Console / Analytics) usan credenciales
+gestionadas localmente por el mantenedor, fuera del repositorio. No hay secretos versionados:
+tokens y service accounts viven solo en el entorno local, nunca en el repo.
